@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+    <title>90 Days in Japan</title>
+
+    <!-- For-Mobile-Apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Countdown Timer Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //For-Mobile-Apps -->
+
+    <!-- Style -->
+        <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <!-- //Style -->
+
+    <!-- Fonts -->
+        <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- Fonts -->
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+    <div class="container">
+        <h1>Days Left in Japan</h1>
+        <div class="clear-loading spinner">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Miss you Bangladesh!</h2>
+        <h3>We'll leave Japan after <span class="sub-message">:</span></h3>
+
+        <div class="clock">
+            <div class="column days">
+                <div class="timer" id="days"></div>
+                <div class="text">DAYS</div>
+            </div>
+            <div class="timer days">:</div>
+            <div class="column">
+                <div class="timer" id="hours"></div>
+                <div class="text">HOURS</div>
+            </div>
+            <div class="timer">:</div>
+            <div class="column">
+                <div class="timer" id="minutes"></div>
+                <div class="text">MINUTES</div>
+            </div>
+            <div class="timer">:</div>
+            <div class="column">
+                <div class="timer" id="seconds"></div>
+                <div class="text">SECONDS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p> A concept of <a href="http://fb.me/sudarshaana">Sudarshan Mondal</a></p>
+    </div>
+	
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Dec 14, 2019 23:59:49").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  document.getElementById("days").innerHTML = days;
+	  document.getElementById("hours").innerHTML = hours;
+	  document.getElementById("minutes").innerHTML = minutes;
+	  document.getElementById("seconds").innerHTML = seconds;
+		
+	  if (distance < 0) {
+		clearInterval(x);
+	  }
+	}, 1000);
+	</script>
+
+    <!-- Custom-JavaScript-File-Links -->
+
+        <script  src="js/jquery-1.12.3.min.js"></script>
+        
+    <!-- //Custom-JavaScript-File-Links -->
+
+</body>
+<!-- //Body -->
+
+</html>
